@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Maintenance Applicative</title>
 </head>
+
 <body>
     <h1>Maintenance Applicative Basile Parrain</h1>
-    
+
     <?php
     $tirage = null;
     if ($_POST) {
@@ -30,7 +32,7 @@
         }
     }
     ?>
-    
+
     <form method="post">
         <input type="text" name="champ1" placeholder="Champ 1"><br>
         <input type="text" name="champ2" placeholder="Champ 2"><br>
@@ -51,6 +53,8 @@
         <li>Amen</li>
         <li>Léo</li>
         <li>tom</li>
+        <li>Eden</li>
     </ul>
 </body>
+
 </html>
