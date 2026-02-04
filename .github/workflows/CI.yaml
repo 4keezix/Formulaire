@@ -29,5 +29,5 @@ jobs:
       - name: Run tests
         run: ./vendor/bin/phpunit tests/
 
-
-        
+      - name: Run Linter
+        run: ./vendor/bin/phpstan analyse src *.php
