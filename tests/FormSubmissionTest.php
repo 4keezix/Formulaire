@@ -12,7 +12,7 @@ class FormSubmissionTest extends TestCase
     protected function setUp(): void
     {
         $this->pdo = new PDO(
-            'mysql:host=db;dbname=formulaire;charset=utf8',
+            'mysql:host=127.0.0.1;dbname=formulaire;charset=utf8',
             'user',
             'password',
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
