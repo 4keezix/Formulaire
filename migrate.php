@@ -15,6 +15,10 @@ $migrations = $json['migrations'];
 $stmt = $pdo->query("SELECT id FROM migrations");
 $executed = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
+// exec init migration
+$pdo->exec($migration[0]);
+
+// exec other migrations
 foreach ($migrations as $migration) {
 
     $id = $migration['id'];
