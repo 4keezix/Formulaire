@@ -17,6 +17,7 @@ class FormSubmissionTest extends TestCase
             'password',
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
         );
+        curl_exec(curl_init("/migrate.php"));
         $this->pdo->exec("DELETE FROM tirages WHERE choix LIKE 'TEST_%'");
     }
 
